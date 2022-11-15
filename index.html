@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cats VS Frogs</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jscript.js" type="module"></script>
+    <link rel="icon" type="image/x-icon" href="/images/stringball.png">
+</head>
+<body>
+<br>
+
+<div id="settings">
+    Character Speed:
+    <input type="range" min="1" max="20" value="9" class="slider" id="speed"><br>
+    Enemy Speed:
+    <input type="range" min="1" max="20" value="10" class="slider" id="enemyspeed"><br>
+    Number of Collectibles:
+    <input type="range" min="1" max="100" value="20" class="slider" id="collectibles"><br>
+    Number of Enemies:
+    <input type="range" min="1" max="30" value="6" class="slider" id="enemies"><br>
+    Size of the Map:
+    <input type="range" min="5" max="25" value="20" class="slider" id="mapsize"><br>
+    Enemy Follow Rate:
+    <input type="range" min="0" max="100" value="40" class="slider" id="followrate"><br>
+    Max health 1-9:
+    <input type="range" min="1" max="9" value="9" class="slider" id="maxhealth"><br>
+    Map generation Seed:
+    <input type="number" id="seed" value="7595" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+
+
+
+    <button id='start'>Start Game!</button>
+</div>
+<div class="canvas-container">
+    <canvas id="myCanvas" style="border:1px solid black;"></canvas><br>
+    <canvas id="HUD" style="border:1px solid black;"></canvas>
+    <button id='restart'>Try Again!</button>
+    <button id='newGame'>New Game</button>
+
+    <div id="pointcontainer"><img src="images/stringball.png">
+        <div id="points"></div></div>
+    <div id="totalpoints"></div>
+
+</div>
+
+</canvas>
+</body>
+</html>
