@@ -1,0 +1,40 @@
+.myButton{
+    color: chocolate;
+}
+body {
+    background-color: black;
+}
+.canvas-container{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    color:white;
+    margin:0 auto;
+    right:5%;
+}
+
+#canvas {
+    position: absolute;
+    background-color:lightgrey
+}
+#restart{
+    position:absolute;
+    left:50%;
+    top:85%
+}
+#newGame {
+    position:absolute;
+    left:65%;
+    top:85%
+}
+#pointcontainer,#points{
+    display:inline;
+    font-size: 30px;
+    float:right;
+}
+#settings{
+    color:white;
+    margin:0 auto;
+    right:5%;
+    font-size: 30px;
+}
